@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p class="logo">FAKHRI</p>
+            <button class="btnmenu" onclick="showHideMenu()"><i class='bx bx-menu'></i></button>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#portofolio">portofolio</a></li>
+                    <li><a href="#Skills">skils</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="jumbotron-home" id="home">
+            <div class="jleft">
+                <p class="name">Hi my name is</p><br>
+                <p class="name">MUHAMMAD <span>FAKHRI</span> RAMADHAN</p><br>
+                <p class="job">Ana Adalah <span>junior Programmer</span></p><br>
+                <p class="desc">saya muhammad fakhri ramadhan , saya adalah junior programmer dan juga santri madinatul
+                    qur.an</p>
+            </div>
+            <div class="jright-home">
+                <!-- <img src="Screenshot 2023-11-22 100621.png" alt="foto"> -->
+            </div>
+        </section>
+        <section>
+            <div class="container" id="portofolio">
+                <h1 class="sub-title">my project</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Screenshot 2023-12-13 082734.png" alt="">
+                        <div class="layer">
+                            <h3>figma project</h3>
+                            <p>ini adalah project figma saat uas</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Screenshot 2023-12-13 081217.png" alt="">
+                        <div class="layer">
+                            <h3>bandung project</h3>
+                            <p>project ini adalah latihan pertama membuat website tentang html css dan juga rensponsive
+                            </p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>                   
+               </div>
+            </div>
+        </section>
+        <section class="container1">
+            <div class="jright-about">
+               <img src="images.jpeg" alt="">
+            </div>
+            <div class="container2" id="Skills">
+                <h1 class="heading1"> Skills</h1>
+                <div class="Technical-bars">
+                    <!-- ... (elemen-elemen bar) -->
+                    <div class="bar">
+                        <i style="color:#c95d2e" class='bx bxl-html5'></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span class="info"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i style="color:#147bbc" class='bx bxl-css3'></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i style="color:#b0bc1e" class='bx bxl-javascript'></i>
+                        <div class="info">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progress-line js">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i style="color:#c32ec9" class='bx bxl-figma'></i>
+                        <div class="info">
+                            <span>figma</span>
+                        </div>
+                        <div class="progress-line figma">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Contact <span>Me</span></h2>
+                <h4>fakhri is real bro</h4>
+                <p>Contact me bro hehe</p>
+                <div class="contact-list">
+                    <ul>
+                        <li><i class='bx bxs-send'></i> muhammadfakhriramadhan08@gmail.com</li>
+                        <li><i class='bx bxs-phone'></i> 62+ 821-2453-8749</li>
+                    </ul>
+                </div>
+                <div class="contact-icons">
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-whatsapp'></i></a>
+                    <a href=""><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="text" placeholder="Enter your subject">
+                    <textarea name="message" cols="40" rows="10" placeholder="Enter your message"></textarea>
+                    <input type="submit" value="Submit" class="send">
+                </form>
+            </div>
+        </section>
+    </main>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <script>
+        var menu = false
+        function showHideMenu() {
+            if (menu == false) {
+                var element = document.getElementById("menu");
+                element.classList.add("show")
+                menu = true;
+            } else {
+                var element = document.getElementById("menu");
+                element.classList.remove("show")
+                menu = false;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
